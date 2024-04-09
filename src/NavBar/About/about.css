@@ -1,0 +1,53 @@
+.main_img {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)) , url('mainImg.jpg');
+    min-height: 450px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main_img h1 {
+    font-size: 40px;
+    margin: 0;
+}
+.main_img p {
+    width: 70%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+
+
+.about_mainContainer {
+    min-height: 70vh;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img_cat {
+
+}
+.about_blockOne_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
