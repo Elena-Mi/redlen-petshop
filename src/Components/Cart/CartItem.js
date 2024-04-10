@@ -6,29 +6,35 @@ import './cart.css';
 import { motion } from "framer-motion";
 
 const CartItem = ({cartItem}) => {
-    const shopping = dataProduct.find(item => item.id === cartItem.shopId);
-    const dispatch = useDispatch();
-    console.log(cartItem)
     
-
+    const dispatch = useDispatch();
+    
+  
     return(
-        <div className="cartItem-container">
-{/* 
+        <div>
+            {dataProduct.filter(item => item.id === cartItem.shopId).map((elem,index) => {
+                return(
+                    <div  key={index} className="cartItem-container">
+
             <div className="left"> 
-                <img className="cartItem-img" src={`${shopping.img}.jpg`} alt='product'/>
+                <img className="cartItem-img" src={`../${elem.img}.jpg`} alt='product'/>
             </div>
             <div className="box1-cartItem"> 
-                <p className="cartItem-title"> {shopping.name}</p>
-                <p className="cartItem-quantity-price"> {shopping.price.toFixed(2) * cartItem.quantity} штук(и) </p>
+                <p className="cartItem-title"> {elem.name}</p>
+                <p className="cartItem-quantity-price"> {elem.price.toFixed(2) * cartItem.quantity} штук(и) </p>
             </div>
         <div className="right">
                 <motion.span whileHover={{color: '#FF2121'}} onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}>
                     <FaRegTrashAlt />
                 </motion.span>
 
-        </div>     */}
+        </div>    
 
         </div>
+                )
+            })}
+        </div>
     )
-}
+    }
+
 export default CartItem;

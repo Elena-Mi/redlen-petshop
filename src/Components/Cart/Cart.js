@@ -18,9 +18,10 @@ const Cart = () => {
                     : `Всего: $${totalPrice.toFixed(2)}`}</h3>
 
             
-            {cartItems.map((cartItem, itemCart)=>   <CartItem
+            {cartItems.map((cartItem,itemCart)=>   <CartItem
                 cartItem={cartItem}
                 key={itemCart}
+               
             />)}
             
             <div>

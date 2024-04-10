@@ -11,7 +11,7 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 
 
-const AboutProduct = ({shop}) => {
+const AboutProduct = () => {
     const title = useParams().title;
     const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
@@ -51,7 +51,7 @@ const AboutProduct = ({shop}) => {
                             <motion.button whileHover={{scale:1.05, transition: '0.3s ease'}} className='add_cart_btn'
                            onClick={ () => {dispatch(
                             addItemToCart({
-                               shop, quantity
+                         elem, quantity
                                 }))}}     >
                             <IoBagAddOutline className='icon-add' />ADD TO CART
                             </motion.button>

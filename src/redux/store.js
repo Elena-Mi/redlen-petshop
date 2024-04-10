@@ -12,23 +12,30 @@ import { persistStore,
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
-
-const persistConfig = {
-    key: 'root',
-    storage
-}
-
-const rootReducer = combineReducers({shop, cart});
-
-const persistedReducer = persistReducer( persistConfig, rootReducer);
-
 export const store = configureStore({
-    reducer: persistedReducer,
-    middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware({
-        serializableCheck: {
-          ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-        },
-      }),
+    reducer: {
+      shop,
+      cart 
+    },
   })
-  export const persistor = persistStore(store);
+
+
+// const persistConfig = {
+//     key: 'root',
+//     storage
+// }
+
+// const rootReducer = combineReducers({shop, cart});
+
+// const persistedReducer = persistReducer( persistConfig, rootReducer);
+
+// export const store = configureStore({
+//     reducer: persistedReducer,
+//     middleware: (getDefaultMiddleware) =>
+//       getDefaultMiddleware({
+//         serializableCheck: {
+//           ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+//         },
+//       }),
+//   })
+//   export const persistor = persistStore(store);
