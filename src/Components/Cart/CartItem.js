@@ -14,16 +14,16 @@ const CartItem = ({cartItem}) => {
         <div>
             {dataProduct.filter(item => item.id === cartItem.shopId).map((elem,index) => {
                 return(
-                    <div  key={index} className="cartItem-container">
+            <div  key={index} className="cartItem-container">
 
             <div className="left"> 
                 <img className="cartItem-img" src={`../${elem.img}.jpg`} alt='product'/>
             </div>
             <div className="box1-cartItem"> 
                 <p className="cartItem-title"> {elem.name}</p>
-                <p className="cartItem-quantity-price"> {elem.price.toFixed(2) * cartItem.quantity} штук(и) </p>
+                <p className="cartItem-quantity-price"> {cartItem.quantity} штук(и) </p>
             </div>
-        <div className="right">
+            <div className="right">
                 <motion.span whileHover={{color: '#FF2121'}} onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}>
                     <FaRegTrashAlt />
                 </motion.span>

@@ -6,7 +6,7 @@
 }
 .cartItem-container {
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     background-color: #f5f6f7;
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,7 @@
     flex-direction: column;
     justify-content: flex-start;
     flex: 1;
+    margin-left: 10px;
 }
 .box2-cartItem {
     display: flex;
@@ -37,7 +38,7 @@
   }
   .cartItem-title {
     font-weight: 700 !important;
-    font-size: 16px;
+    font-size: 13px;
     padding: 0px;
     margin: 0px;
   }
