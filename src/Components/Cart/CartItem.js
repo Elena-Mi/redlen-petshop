@@ -6,21 +6,20 @@ import './cart.css';
 import { motion } from "framer-motion";
 
 const CartItem = ({cartItem}) => {
-    
+    const product = dataProduct.find(item => item.id === cartItem.shopId);
     const dispatch = useDispatch();
     
   
     return(
         <div>
-            {dataProduct.filter(item => item.id === cartItem.shopId).map((elem,index) => {
-                return(
-            <div  key={index} className="cartItem-container">
+            
+            <div className="cartItem-container">
 
             <div className="left"> 
-                <img className="cartItem-img" src={`../${elem.img}.jpg`} alt='product'/>
+                <img className="cartItem-img" src={`../${product.img}.jpg`} alt='product'/>
             </div>
             <div className="box1-cartItem"> 
-                <p className="cartItem-title"> {elem.name}</p>
+                <p className="cartItem-title"> {product.name}</p>
                 <p className="cartItem-quantity-price"> {cartItem.quantity} штук(и) </p>
             </div>
             <div className="right">
@@ -31,8 +30,7 @@ const CartItem = ({cartItem}) => {
         </div>    
 
         </div>
-                )
-            })}
+                
         </div>
     )
     }

@@ -1,3 +1,56 @@
+
+export const sliderData = [
+    {image: 'sliderOne'},
+    {image: 'sliderTwo'},
+    {image: 'sliderThree'}
+];
+
+ export const  categoryData = [
+    {
+        id:1,
+        img: 'categoryOne',
+        title: 'Электроника'
+    },
+    {
+        id: 2,
+        img: 'categoryTwo',
+        title: 'Домашний уход'
+    },
+    {
+        id: 3, 
+        img: 'categoryThree',
+        title: "Игрушки"
+    }
+]
+export const serviceData = [
+    {
+      
+      title: "САМОЛЕТ",
+      subtitle: "Быстрая доставка за три  дня",
+      bg: "#265fd19d",
+    },
+    {
+      
+      title: "СДЕК",
+      subtitle: "Доставка за 14 дней до двери",
+      bg: "#7bdf6cc1",
+    },
+    {
+      
+      title: "КАРГО",
+      subtitle: "Доставка за 20 дней до Москвы",
+      bg: "#cfcfcf",
+    },
+    {
+        
+        title: "ПО КИТАЮ",
+        subtitle: "Доставка за 5-7 дней",
+        bg: "#515dff",
+      },
+    
+  ];
+
+
 const dataProduct = [
     {
         id: 1,
@@ -614,7 +667,6 @@ const dataProduct = [
     category: 'ДЛЯ ПИТАНИЯ',
     title: 'water-bowl',
 }
-]
+];
 export default dataProduct;
 
-// ДЛЯ ПИТАНИЯ, ДЛЯ ТУАЛЕТА,ДОМАЩНИЙ УХОД, ЭЛЕКТРОНИКА, ИГРУШКИ

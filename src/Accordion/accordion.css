@@ -1,0 +1,48 @@
+:root {
+    --blue_dark: #1f57c3;
+    --light_dark: #265fd19d;
+    --dark_green: #13544e;
+    --green_light: #7bdf6cc1;
+    --white:#fff;
+    --text_color: #232323;
+    --light_black: #565e73c9;
+    --transparent: rgba(255,255,255,.5);
+  --skskf: #515dff;
+  }
+.main_accordion {
+    background-color: var(--blue_dark);
+    color: var(--white);
+    border-radius: 8px;
+}
+.active {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.default {
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid var(--white);
+    width: 100%;
+   
+
+}
+.content {
+    background-color: var(--white);
+    padding: 50px 11px ;
+    color: var(--text_color);
+    width: 100%;
+    font-size: 19px;
+}
+.arrow {
+	display: flex;
+	flex-direction: row-reverse;
+    padding: 0px 5px  10px 10px;
+}
+
+
+@media all and (max-width: 416px) {
+	.content {
+    font-size: 17px;
+}
+}

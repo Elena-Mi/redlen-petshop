@@ -1,0 +1,209 @@
+
+:root {
+    --blue_dark: #1f57c3;
+    --light_dark: #265fd19d;
+    --dark_green: #13544e;
+    --green_light: #7bdf6cc1;
+    --white:#fff;
+    --text_color: #232323;
+    --light_black: #565e73c9;
+    --transparent: rgba(255,255,255,.5);
+    --light_white: #ededed;
+  }
+  .services {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    
+}
+.services-item {
+    padding: 35px 17px ;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 285px;
+    
+}
+
+.services-item h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 700;
+    color: var(--white);
+    text-shadow: .5px .5px var(--blue_dark);
+}
+.services-item p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: var( --text_color);
+    
+}
+.box_container {
+    display:flex;
+    justify-content: center;
+   
+}
+.delivery_flight_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededed;
+    border-radius: 8px;
+    padding: 5px 8px;
+    margin: 5px 10px;
+    border: 1px solid var(--blue_dark);
+    width: 700px;
+   
+   
+}
+
+.delivery_kargo_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededed;
+    border-radius: 8px;
+    padding: 5px 8px;
+   
+    margin: 5px 10px;
+    border: 1px solid var(--blue_dark);
+    width: 700px;
+}
+.delivery_cdek_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededed;
+    border-radius: 8px;
+    padding: 5px 8px;
+    margin: 0px 10px;
+    border: 1px solid var(--blue_dark);
+ 
+    width: 700px;
+}
+.delivery_china_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededed;
+    border-radius: 8px;
+    padding: 5px 8px;
+    margin: 0px 10px;
+    border: 1px solid var(--blue_dark);
+ 
+    width: 700px;
+}
+.delF_title, .delK_title, .delC_title, .delCi_title{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--blue_dark);
+    margin-top: 15px;
+    text-align: center;
+}
+.delF_textOne, .delK_text_One, .delC_text_One, .delCi_text_One  {
+    color: var(--light_black);
+    font-size: 20px;
+    text-align: center;
+}
+.delF_textTwo, .delK_text_Two, .delC_text_Two, .delCi_text_Two {
+    text-align: center;
+    font-size: 17px;
+    color: var(--text_color);
+}
+.delF_textThree, .delK_text_Three, .delCi_text_Three{
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    color: var(--dark_green);
+}
+.delC_text_Three {
+    padding: 13px;
+    background-color: var(--dark_green);
+    margin-top: 10px;
+    border-radius: 8px;
+    color: var(--white);
+    text-align: center;
+}
+.paymentMethod  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light_white);
+    margin-top: 10px;
+    padding: 10px 0px;
+    
+}
+.paymentTitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--blue_dark);
+    margin-top: 15px;
+   
+}
+.payment_boxOne, .payment_boxTwo,.payment_boxThree {
+    display: flex;
+    flex-direction: column;
+    justify-conent: center;
+    align-items: center;
+   
+
+}
+.methodNumber {
+    font-size:40px;
+    color: var(--white);
+    width: 30px;
+    font-weight: 900;
+    text-shadow: 1px 1px var(--blue_dark);
+    
+}
+
+.paymentTextOne, .paymentTextTwo, .paymentThree {
+    font-size: 18px;
+    color: var(--text_color);
+    text-align: center;
+
+}
+@media all and (max-width: 832px) {
+    .paymentTitle{
+        font-size: 25px;
+    }
+    .paymentTextOne, .paymentTextTwo, .paymentThree{
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+}
+@media all and (max-width:600px) {
+    .box_container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .delivery_flight_container, .delivery_kargo_container, .delivery_cdek_container,.delivery_china_container{
+        width: 100%;
+    }
+    .delF_title, .delK_title, .delC_title, .delCi_title{
+        font-size: 20px;
+    }
+    .delF_textOne, .delK_text_One, .delC_text_One, .delCi_text_One{
+        font-size: 18px;
+    }
+    .delF_textThree, .delK_text_Three, .delCi_text_Three {
+        font-size: 22px;
+    }
+    .paymentTitle{
+        font-size: 20px;
+    }
+}

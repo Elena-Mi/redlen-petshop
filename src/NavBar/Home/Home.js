@@ -1,8 +1,14 @@
+import Slider from "../../Slider/Slider";
+import Category from "../Category/Category";
 
+import'./home.css';
 
 const  Home=()=> {
   return (
-  <div></div>
+  <div>
+    <Slider/>
+    <Category/>
+  </div>
   )
 }
 

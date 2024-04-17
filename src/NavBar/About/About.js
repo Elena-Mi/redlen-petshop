@@ -3,6 +3,7 @@ import React from 'react';
 import picture from './1.jpg';
 import pictureSecond from './2.jpg'
 import { useNavigate } from 'react-router';
+import { motion } from "framer-motion";
 
 const  About =()=> {
 
@@ -21,7 +22,7 @@ const  About =()=> {
       <div className='about_mainContainer'>
         <div className='about_main'> 
             <div className='about_img' data-aos="fade-right" data-aos-duration="1000">
-              <img className='img_cat' width='400px' height='450px' src={picture} alt='catPicture'/>
+              <motion.img  animate={{scale: .9}} className='img_cat' width='400px' height='450px' src={picture} alt='catPicture'/>
             </div>
 
 
@@ -31,10 +32,10 @@ const  About =()=> {
             </div>
 
             <div className='about_desc'>
-              <p>
+              <p className='about_desc_one'>
                 Мы предлагаем широкий ассортимент продукции – от кормов и игрушек до одежды и аксессуаров для домашних питомцев
               </p> 
-              <p> <span className='span_text'>Мы тщательно отбираем поставщиков и продукцию,</span> чтобы гарантировать высокое качество товаров. Все товары проходят строгий контроль качества на каждом этапе производства, чтобы убедиться, что они безопасны и удовлетворяют потребности наших клиентов и их питомцев</p>
+              <p className='about_desc_two'> <span className='span_text'>Мы тщательно отбираем поставщиков и продукцию,</span> чтобы гарантировать высокое качество товаров. Все товары проходят строгий контроль качества на каждом этапе производства, чтобы убедиться, что они безопасны и удовлетворяют потребности наших клиентов и их питомцев</p>
             </div>
           </div>  
         </div>

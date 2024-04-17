@@ -10,12 +10,12 @@
   --blue_dark: #1f57c3;
   --light_dark: #265fd19d;
   --dark_green: #13544e;
-  --green_light: #168b05;
+  --green_light: #7bdf6cc1;
   --white:#fff;
   --text_color: #232323;
   --light_black: #565e73c9;
   --transparent: rgba(255,255,255,.5);
-
+   --light_white: #fefefe;
 }
 body {
 	overflow-x: hidden;
