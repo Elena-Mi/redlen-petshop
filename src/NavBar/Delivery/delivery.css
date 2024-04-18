@@ -193,6 +193,8 @@
     }
     .delivery_flight_container, .delivery_kargo_container, .delivery_cdek_container,.delivery_china_container{
         width: 100%;
+        margin: 0px;
+
     }
     .delF_title, .delK_title, .delC_title, .delCi_title{
         font-size: 20px;
@@ -204,6 +206,26 @@
         font-size: 22px;
     }
     .paymentTitle{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 500px) {
+    .delivery_flight_container, .delivery_kargo_container, .delivery_cdek_container,.delivery_china_container{
+        width: 300px;
+        margin-top: 10px;
+      
+    }
+    .box_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+@media all and (max-width: 300px) {
+    .box_container {
+        width: 250px;
         font-size: 20px;
     }
 }

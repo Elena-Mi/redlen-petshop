@@ -1,4 +1,6 @@
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+
 import ScrollButton from "../ScrollButton/ScrollButton";
 import Routers from "../routes/Routes";
 
@@ -9,6 +11,9 @@ const Main = () => {
             <div>
                 <Routers/>
             </div>
+        
+    
+            <Footer/>
             <ScrollButton/>
         </div>
     )
