@@ -51,8 +51,8 @@ form {
         font-size: 17px;
         padding: 5px 5px;
     }
-    .form_container {
-        width: 300px;
+    form {
+        width: 80%;
     }
   
 }
