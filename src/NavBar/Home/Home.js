@@ -1,5 +1,6 @@
 import Slider from "../../Slider/Slider";
-import Category from "../Category/Category";
+import Category from "../../Category/Category";
+import Gift from '../../GiftCategory/Gift';
 
 import'./home.css';
 
@@ -8,6 +9,8 @@ const  Home=()=> {
   <div>
     <Slider/>
     <Category/>
+    <Gift />
+    
   </div>
   )
 }

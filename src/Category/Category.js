@@ -1,4 +1,4 @@
-import { categoryData } from "../../Data/dataProduct";
+import { categoryData } from "../Data/dataProduct";
 import CategoryItem from "./CategoryItem";
 import './category.css';
 

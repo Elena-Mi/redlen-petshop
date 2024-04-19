@@ -50,7 +50,7 @@ const Footer = () => {
                             <p className='ft-linkItem'>Доставка </p>
 
                         </Link>
-                        <Link className="ft-link" to={`/contacts`}>
+                        <Link className="ft-link" to={`/contact`}>
                             <p className='ft-linkItem'>Контакты </p>
 
                         </Link>

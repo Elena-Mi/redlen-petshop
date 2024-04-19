@@ -1,4 +1,5 @@
 
+
 export const sliderData = [
     {image: 'sliderOne'},
     {image: 'sliderTwo'},
