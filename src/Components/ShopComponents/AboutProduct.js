@@ -9,6 +9,9 @@ import ChangeQuantity from '../Cart/ChangeQuantity';
 import { addItemToCart } from '../../redux/cartSlice';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { IoMdHeartEmpty } from "react-icons/io";
+import { addHeartToFavorites } from '../../redux/heartSlice';
+
 
 
 const AboutProduct = () => {
@@ -48,12 +51,18 @@ const AboutProduct = () => {
 
 
                             <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
+
+                            <motion.span  className='icon-heart-add' onClick={() => {dispatch(addHeartToFavorites({elem}))}}>
+                              Добавить в избранное <IoMdHeartEmpty className='big-heart' /> 
+                            </motion.span>
+
+
                             <motion.button whileHover={{scale:1.05, transition: '0.3s ease'}} className='add_cart_btn'
                            onClick={ () => {dispatch(
                             addItemToCart({
                          elem, quantity
                                 }))}}     >
-                            <IoBagAddOutline className='icon-add' />ADD TO CART
+                            <IoBagAddOutline className='icon-add' />Добавить в корзину
                             </motion.button>
 
                             <motion.button whileHover={{textDecoration: 'underline', color: 'blue', fontWeight: 'bold'}} 

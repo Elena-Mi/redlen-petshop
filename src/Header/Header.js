@@ -8,6 +8,7 @@ import { useRef, useState } from 'react';
 import { getTotalArticles } from '../redux/cartSlice';
 import Cart from '../Components/Cart/Cart';
 import { useSelector } from 'react-redux';
+// import Favorites from '../Components/Favorites/Favorites';
 
 const nav_links = [
     {
@@ -36,9 +37,12 @@ const nav_links = [
 const Header = () => {
     const [cartContainer, setCartContainer] = useState(false);
     const [fixNav, setFixNav] = useState(false);
-
     const menuRef = useRef(null);
+    const [heartContainer, setHeartContainer] = useState(false);
 
+    const openHeart = () => {
+        setHeartContainer(!heartContainer);
+    }
     const openCart = () => {
         setCartContainer(!cartContainer)
     }
@@ -50,6 +54,7 @@ const Header = () => {
     }
 
     window.addEventListener('scroll', setFixNavbar);
+
     const totalItems = useSelector(getTotalArticles);
 
     const menuToggle = () => menuRef.current.classList.toggle('active-menu')
@@ -77,9 +82,11 @@ const Header = () => {
                 </div>
 
                 <div className='nav-icons'> 
-                <motion.div whileHover={{scale: 1.2}} className='fav-icon'>
+                <Link to='/favorites'>
+                <motion.div whileHover={{scale: 1.2}} className='heart-container fav-icon' onClick={ () => openHeart()} >
                     <IoMdHeartEmpty />
                 </motion.div>
+                </Link>
                 <motion.div whileHover={{scale: 1.2}} className="cart-container cart-icon" onClick={() => openCart()}>
                     <CiShoppingCart />
                 </motion.div> 

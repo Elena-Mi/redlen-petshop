@@ -1,11 +1,16 @@
 import './shop.css';
 import { Link } from 'react-router-dom';
 import { IoEyeOutline } from "react-icons/io5";
-import { IoMdHeartEmpty } from "react-icons/io";
+
+
 
 const Shop = ({shop}) => {
+
+
+
+
   
-  
+ 
     return(
         <div className='cont' data-aos="fade-up" data-aos-duration="1500">
             <Link className='link' to={`/shop/${shop.title}`}>
@@ -19,7 +24,7 @@ const Shop = ({shop}) => {
                              </div>
                                 <div className='icon'>
                                 <IoEyeOutline />
-                                <IoMdHeartEmpty />
+                                
                             </div>
                         </div>
                     </div>

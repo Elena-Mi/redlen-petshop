@@ -272,7 +272,7 @@ const dataProduct = [
     },
     {
         id: 18,
-        img: "black-stone-one",
+        img: "black-stone-four",
         imgTwo: 'black-stone-two',
         imgThree: 'black-stone-three',
         
@@ -372,10 +372,10 @@ const dataProduct = [
         weight:'1.8 кг',
         price: 1406,
         category: 'ДЛЯ ПИТАНИЯ',
-        title: 'bifthree-cat',
+        title: 'bifthree-catt',
     },
 
-    // ДОполнить фотки
+   
     {
         id: 26,
         img: "spade-one",
@@ -415,7 +415,7 @@ const dataProduct = [
         category: 'ИГРУШКИ',
         title: 'neck-cat',
     },
-    // ДОполнить фотки
+    
     {
         id: 29,
         img: "mouse-one",
@@ -429,12 +429,12 @@ const dataProduct = [
         category: 'ИГРУШКИ',
         title: 'mouse-cat',
     },
-     // ДОполнить фотки
+    
      {
         id: 30,
         img: "big-tray-one",
         imgTwo: 'big-tray-two',
-        imgThree: '',
+        imgThree: 'big-tray-three',
         
         name:'Лоток',
         description: "Большой лоток подходит для больших пород кошек",
@@ -457,7 +457,7 @@ const dataProduct = [
         category: 'ДЛЯ ТУАЛЕТА',
         title: 'smallbig-tray-cat',
     },
-     // ДОполнить фотки
+     
      {
         id: 32,
         img: "trash-box-one",
@@ -471,12 +471,12 @@ const dataProduct = [
         category: 'ДЛЯ ТУАЛЕТА',
         title: 'trash-cat',
     },
-     // ДОполнить фотки
+     
      {
         id: 33,
         img: "box-mouse-one",
         imgTwo: 'box-mouse-two',
-        imgThree: '',
+        imgThree: 'box-mouse-three',
     
         name:'Мышка',
         description: "Мышка в металической упаковке",
@@ -485,12 +485,12 @@ const dataProduct = [
         category: 'ИГРУШКИ',
         title: 'metal-boxmouse-cat',
     },
-      // ДОполнить фотки
+    
       {
         id: 34,
         img: "small-cat-toy-one",
         imgTwo: 'small-cat-toy-two',
-        imgThree: '',
+        imgThree: 'small-cat-toy-three',
        
         name:'Игрушка',
         description: "Игрушка из мягкой ткани",
@@ -499,12 +499,12 @@ const dataProduct = [
         category: 'ИГРУШКИ',
         title: 'small-toy-cat',
     },
-       // ДОполнить фотки
+
        {
         id: 35,
         img: "cat-bed-one",
         imgTwo: 'cat-bed-two',
-        imgThree: '',
+        imgThree: 'cat-bed-three',
       
         name:'Лежанка',
         description: "Лежанка для сна",
@@ -513,12 +513,12 @@ const dataProduct = [
         category: 'ИГРУШКИ',
         title: 'bed-cat',
     },
-        // ДОполнить фотки
+       
         {
             id: 36,
             img: "big-cage-one",
-            imgTwo: '',
-            imgThree: '',
+            imgTwo: 'big-cage-two',
+            imgThree: 'big-cage-three',
            
             name:'Клетка',
             description: "Пластиковая клетка для перевоза животного в багаже. Уточнять размеры на почте. Есть три вида разных клеток, для разных габаритов животных",
@@ -527,12 +527,12 @@ const dataProduct = [
             category: 'ИГРУШКИ',
             title: 'big-cage-cat',
         },
-    // ДОполнить фотки
+    
     {
         id: 37,
         img: "small-cage-one",
         imgTwo: 'small-cage-two',
-        imgThree: '',
+        imgThree: 'small-cage-three',
         
         name:'Переноска',
         description: "Тканевая переноска. Подходит для прогулок с животным и перевозом в машине, салоне самолета, поезде",
@@ -541,12 +541,12 @@ const dataProduct = [
         category: 'ИГРУШКИ',
         title: 'small-cage-cat',
     },    
-     // ДОполнить фотки
+
      {
         id: 38,
         img: "jps-one",
         imgTwo: 'jps-two',
-        imgThree: '',
+        imgThree: 'jps-three',
     
         name:'JPS ошейник',
         description: "Ошейник с JPS поможет отследить вашего питомца",
@@ -555,12 +555,12 @@ const dataProduct = [
         category: 'ЭЛЕКТРОНИКА',
         title: 'jps-cat',
     }, 
-     // ДОполнить фотки   
+  
     {
         id: 39,
         img: "huge-cage-one",
         imgTwo: 'huge-cage-two',
-        imgThree: '',
+        imgThree: 'huge-cage-three',
      
         name:'Рюкзак переноска',
         description: "Большой рюкзак для прогулок с домашним животным. Выдерживает вес до 20 кг",
@@ -569,12 +569,12 @@ const dataProduct = [
         category: ' ИГРУШКИ',
         title: 'cat-cage',
     }, 
-     // ДОполнить фотки   
+       
      {
         id: 40,
         img: "backpack-one",
-        imgTwo: '',
-        imgThree: '',
+        imgTwo: 'backpack-two',
+        imgThree: 'backpack-three',
     
         name:'Рюкзак переноска',
         description: "Рюкзак для прогулок с домашним животным. Выдерживает вес до 20 кг",
@@ -584,7 +584,7 @@ const dataProduct = [
         title: 'backpack-cage',
     }, 
 
-  // ДОполнить фотки   
+
   {
     id: 41,
     img: "walk-bag-one",
@@ -598,12 +598,12 @@ const dataProduct = [
     category: ' ИГРУШКИ',
     title: 'walk-cage',
 }, 
-// ДОполнить фотки   
+
 {
     id: 42,
     img: "huge-toy-one",
-    imgTwo: '',
-    imgThree: '',
+    imgTwo: 'huge-toy-two',
+    imgThree: 'huge-toy-three',
  
     name:'Лежанка игрушка',
     description: "Игрушка тунель для кошачьих игр",
@@ -612,12 +612,12 @@ const dataProduct = [
     category: ' ИГРУШКИ',
     title: 'toy-cat-huge',
 }, 
-// ДОполнить фотки 
+
 {
     id: 43,
     img: "wooden-bowl-one",
-    imgTwo: '',
-    imgThree: '',
+    imgTwo: 'wooden-bowl-two',
+    imgThree: 'wooden-bowl-three',
   
     name:'Миска',
     description: "В комплекте две миски с деревянной подставкой",
@@ -626,12 +626,12 @@ const dataProduct = [
     category: 'ДЛЯ ПИТАНИЯ',
     title: 'wooden-bowl',
 }, 
-// ДОполнить фотки 
+
 {
     id: 44,
     img: "glass-bowl-one",
-    imgTwo: '',
-    imgThree: '',
+    imgTwo: 'glass-bowl-two',
+    imgThree: 'glass-bowl-three',
    
     name:'Миска',
     description: "В комплекте две пластиковые миски ",
@@ -640,12 +640,12 @@ const dataProduct = [
     category: 'ДЛЯ ПИТАНИЯ',
     title: 'glass-bowl',
 }, 
-// ДОполнить фотки 
+
 {
     id: 45,
     img: "bowl-one",
-    imgTwo: '',
-    imgThree: '',
+    imgTwo: 'bowl-two',
+    imgThree: 'bowl-three',
    
     name:'Миска',
     description: "В комплекте две стеклянные миски ",
@@ -654,12 +654,11 @@ const dataProduct = [
     category: 'ДЛЯ ПИТАНИЯ',
     title: 'one-bowl',
 }, 
-// ДОполнить фотки 
 {
     id: 46,
     img: "water-one",
-    imgTwo: '',
-    imgThree: '',
+    imgTwo: 'water-two',
+    imgThree: 'water-three',
    
     name:'Поилка',
     description: "Кошачья поилка с фильтрацией воды. Емкостью 3 литра, керамический беспроводной диспенсер для воды. Батарея 5000mAh, кабель для зарядки Tyce-C ",

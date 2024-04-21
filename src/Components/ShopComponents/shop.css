@@ -99,6 +99,7 @@
 .aboutProduct_img {
     width: 88%;
     max-height: auto;
+    border-radius: 8px;
 }
 .aboutProduct_second_imgContainer {
     display: flex;
@@ -152,6 +153,18 @@
 .icon-add {
     font-size: 20px;
     margin: 0;
+    
+  }
+  .icon-heart-add {
+    font-size: 17px;
+    color: var(--blue_dark);
+  }
+  .big-heart {
+    color: var(--blue_dark);
+    transform: .3 ease;
+  }
+  .big-heart:hover {
+      scale: 1.2;
   }
 
   .quantity_mines, .quantity_plus {
@@ -182,6 +195,9 @@
     justify-content: flex-start;
     background: transparent;
     font-size: 14px;
+  }
+  .icon-add {
+    cursor: pointer;
   }
   @media all and (max-width: 999px) {
     .aboutProduct_container {

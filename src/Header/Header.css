@@ -93,7 +93,7 @@
         background-color: #f0f0f0;
         border-radius: 5px;
        
-        }
+}
         
         .btn-close-cart {
         color: #1a2428;
@@ -129,6 +129,7 @@
         transition: all .2s ease-in-out;
         z-index: 9999;
     }
+   
 
     @media all and  (max-width: 768px) {
         .navigation {

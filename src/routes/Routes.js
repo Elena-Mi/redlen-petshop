@@ -5,6 +5,7 @@ import AboutProduct from '../Components/ShopComponents/AboutProduct';
 import Delivery from '../NavBar/Delivery/Delivery';
 import Contact from '../NavBar/Contact/Contact';
 import About from '../NavBar/About/About';
+import Favorites from '../Components/Favorites/Favorites';
 
 const Routers = () => {
     return(
@@ -15,6 +16,7 @@ const Routers = () => {
         <Route path='shop/:title' element={<AboutProduct />}/>
         <Route path='/delivery' element={<Delivery />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/favorites' element={<Favorites/>}/>
 
       </Routes>
     )
