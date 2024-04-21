@@ -112,7 +112,7 @@
     
 }
 .aboutProduct_imgSecond:hover{
-    scale: 2;
+    scale: 1;
 }
 .right {
     flex: 1;
