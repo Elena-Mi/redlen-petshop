@@ -4,17 +4,14 @@ import { removeItemFromCart } from "../../redux/cartSlice";
 import { useDispatch } from "react-redux";
 import './cart.css';
 import { motion } from "framer-motion";
-// import { useEffect } from "react";
-// import submittedData from '../../redux/cartSlice';
+
 
 
 const CartItem = ({cartItem}) => {
     const product = dataProduct.find(item => item.id === cartItem.shopId);
     const dispatch = useDispatch();
 
-    // useEffect( () => {
-    //     localStorage.setItem('cartItem', JSON.stringify(submittedData));
-    // }, [submittedData])
+
     
   
     return(

@@ -11,6 +11,9 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { IoMdHeartEmpty } from "react-icons/io";
 import { addHeartToFavorites } from '../../redux/heartSlice';
+import { useEffect } from "react";
+import {cartItems} from '../../redux/cartSlice';
+
 
 
 
@@ -19,6 +22,10 @@ const AboutProduct = () => {
     const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
     const dispatch= useDispatch();
+
+    useEffect( () => {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }, [cartItems])
 
     
     return(
