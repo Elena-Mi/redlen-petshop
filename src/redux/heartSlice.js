@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+const heartItemLS = JSON.parse(localStorage.getItem('heartItem'));
 export const slice = createSlice({
     name: 'heart',
     initialState: {
-        heartItem: []
+        heartItem: heartItemLS === null ? [] : heartItemLS,
     },
     reducers: {
         addHeartToFavorites: (state,action) => {

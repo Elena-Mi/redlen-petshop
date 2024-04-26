@@ -21,6 +21,8 @@ const Favorites = () => {
             heartItem={heartItem}
             key={itemHeart}
           />)}
+         
+
         </div>
         <div className='icon-cart'>
                 <button className='btn-cart-box' onClick={navigateTo}>

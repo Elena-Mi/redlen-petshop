@@ -6,14 +6,12 @@ import { IoBagAddOutline } from "react-icons/io5";
 import { MdKeyboardBackspace } from "react-icons/md";
 import { motion } from "framer-motion"
 import ChangeQuantity from '../Cart/ChangeQuantity';
-import { addItemToCart } from '../../redux/cartSlice';
-import { useDispatch } from 'react-redux';
+import { addItemToCart, getCartItems } from '../../redux/cartSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import { IoMdHeartEmpty } from "react-icons/io";
-import { addHeartToFavorites } from '../../redux/heartSlice';
+import { addHeartToFavorites, getHeartItem } from '../../redux/heartSlice';
 import { useEffect } from "react";
-import {cartItems} from '../../redux/cartSlice';
-
 
 
 
@@ -22,10 +20,15 @@ const AboutProduct = () => {
     const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
     const dispatch= useDispatch();
+    const cartItems = useSelector(getCartItems);
+    const heartItem = useSelector(getHeartItem);
 
     useEffect( () => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    }, [cartItems])
+    }, [cartItems]);
+    useEffect( () => {
+        localStorage.setItem('heartItem', JSON.stringify(heartItem))
+    }, [heartItem]);
 
     
     return(

@@ -1,5 +1,4 @@
 import Favorites from "./Favorites";
-import {  MdClose } from "react-icons/md";
 import './favorites.css';
 
 
