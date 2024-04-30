@@ -15,16 +15,18 @@ export const slice = createSlice({
                 id: timeId,
                 shopId: action.payload.elem.id,
                 quantity: action.payload.quantity,
-                totalPrice: action.payload.quantity * action.payload.elem.price
-
+                totalPrice: action.payload.quantity * action.payload.elem.price,
+                
             })
-        },
         
+        },
+       
         removeItemFromCart: (state, action) => {
             state.cartItems = state.cartItems.filter( cartItem => cartItem.id !== action.payload.cartItemId)
         }
     }
 })
+
 export const getTotalPrice = state => {
     return state.cart.cartItems.reduce( (total, cartItems) => {
         return cartItems.totalPrice + total

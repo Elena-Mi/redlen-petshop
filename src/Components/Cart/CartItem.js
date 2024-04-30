@@ -12,7 +12,7 @@ const CartItem = ({cartItem}) => {
     const dispatch = useDispatch();
 
 
-    
+   
   
     return(
         <div>

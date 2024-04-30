@@ -5,7 +5,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { getTotalHearts, removeHeartFromFavorites } from "../../redux/heartSlice";
 import './favorites.css'
 import { useState } from "react";
-// import { addItemToCart } from '../../redux/cartSlice';
+import { addItemToCart } from '../../redux/cartSlice';
 
 
 const FavoritesItems = ({heartItem}) => {
@@ -30,8 +30,8 @@ const FavoritesItems = ({heartItem}) => {
 
             <img className="heartItem-img" src={`../${favorites.img}.jpg`} alt='product'  />
             <p className="heartItem-title"> {favorites.name}</p>
-
-            {/* <button onClick={ () => {dispatch(addItemToCart({favorites}))}}> Добавить в корзину</button> */}
+            
+            <motion.button whileHover={{color: '#7bdf6cc1'}} className="btn_addtoCart" onClick={ () => {dispatch(addItemToCart({elem:favorites, quantity: 1}))}}> Добавить в корзину</motion.button>
 
           
             </div>

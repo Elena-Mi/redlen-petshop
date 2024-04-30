@@ -30,7 +30,7 @@ const AboutProduct = () => {
         localStorage.setItem('heartItem', JSON.stringify(heartItem))
     }, [heartItem]);
 
-    
+
     return(
         <div>
             {dataProduct.filter(item => item.title === title).map((elem,index)=> {
